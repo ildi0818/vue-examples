@@ -1,6 +1,7 @@
 <script>
 import PeldaFeladat from './components/PeldaFeladat.vue'
 import AttributeBindings from './components/AttributeBindings.vue'
+import ConditionalsAndLoops from './components/ConditionalsAndLoops.vue'
 
 export default {
   data() {
@@ -12,7 +13,8 @@ export default {
   },
   components: {
     PeldaFeladat,
-    AttributeBindings
+    AttributeBindings,
+    ConditionalsAndLoops
     }
 }
 </script>
@@ -28,4 +30,7 @@ export default {
 
 <h1>ATTRIBUTE BINDINGS</h1>
 <attribute-bindings />
+
+<h1>CONDITIONALS AND LOOPS</h1>
+<conditionals-and-loops/>
 </template>
