@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <!--
 Here we are reactively binding element attributes / properties to the state.
 The :title syntax is short for v-bind:title.
@@ -10,10 +11,9 @@ export default {
       message: "Hello World!",
       isRed: true,
       color: "green",
-
       bela: "2 forint a tulipán",
       ezPiros: true,
-      ezMegLila: "purple",
+      backgroundColor: "purple",
     };
   },
   methods: {
@@ -23,12 +23,12 @@ export default {
     toggleColor() {
       this.color = this.color === "green" ? "blue" : "green";
     },
-
     valtozzPirosra() {
       this.ezPiros = !this.ezPiros;
     },
-    valtozzLilara() {
-      this.ezMegLila = this.ezMegLila === "purple" ? "yellow" : "purple";
+    hatterValtoztatos() {
+      this.backgroundColor =
+        this.backgroundColor === "purple" ? "yellow" : "purple";
     },
   },
 };
@@ -65,7 +65,7 @@ export default {
     Kattints rám és más színű leszek.
   </p>
 
-  <p :style="{ ezMegLila }" @click="valtozzLilara">
+  <p :style="{ backgroundColor }" @click="hatterValtoztatos">
     Én is váltogatom a színemet.
   </p>
 </template>
